@@ -1,0 +1,89 @@
+/* Общие настройки */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Логотип */
+.logo {
+    max-height: 15vh;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+header {
+  height: 20vh;
+  width: 100%;
+  box-sizing: border-box;
+  background:  rgb(216, 227, 228);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: rgb(216, 227, 228);
+  background:  rgb(216, 227, 228);
+}
+
+.site-title {
+  font-size: 2.5vh;
+  font-weight: bold;
+  color:rgb(0, 8, 8);
+  text-align: center;
+  flex: 1;
+}
+
+
+/* Навигация */
+.navbar-nav .nav-item {
+    margin-left: 2vw; 
+}
+
+.nav-link {
+    font-size: 2vh;
+    color: #CBBD93 !important;
+    font-weight: bold;
+}
+
+/* Принудительно делаем меню горизонтальным */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Видео на главной */
+.hero-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+.map-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 2vh;
+    }
+    .logo {
+        width: 12vw;
+        height: 12vh;
+    }
+}
