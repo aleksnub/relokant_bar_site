@@ -1,1 +1,16 @@
-telegram_bot
+# Игнорируем виртуальное окружение
+.venv/
+venv/
+
+# Игнорируем файлы с секретами
+telegram_bot/
+
+# Игнорируем временные файлы IDE
+*.pyc
+__pycache__/
+.vscode/
+*.swp
+.DS_Store
+
+# Игнорируем JSON с данными канала, если считаем их приватными
+telegram_bot/channel_messages.json
